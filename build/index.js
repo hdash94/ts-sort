@@ -1,5 +1,20 @@
 "use strict";
-const consoleSomething = () => {
-    console.log('hi');
-};
-consoleSomething();
+Object.defineProperty(exports, "__esModule", { value: true });
+// import { Sorter } from './Sorter';
+const NumbersCollection_1 = require("./NumbersCollection");
+const StringsCollection_1 = require("./StringsCollection");
+const LinkedList_1 = require("./LinkedList");
+const numbersCollection = new NumbersCollection_1.NumbersCollection([5, 4, 3, 2, 1]);
+const stringsCollection = new StringsCollection_1.StringsCollection(['abc', 'ABC', 'xyz', 'XYZ']);
+const linkedList = new LinkedList_1.LinkedList();
+linkedList.add(5);
+linkedList.add(4);
+linkedList.add(3);
+linkedList.add(2);
+linkedList.add(1);
+numbersCollection.sort();
+stringsCollection.sort();
+linkedList.sort();
+console.log(numbersCollection.data);
+console.log(numbersCollection.data);
+linkedList.print();
